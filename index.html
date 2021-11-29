@@ -46,13 +46,13 @@
         <div class="container">
             <h1 class="main-text">Эффективные решения для вашего бизнеса</h1>
             <button data-modal-open class="main-button" type="button">Заказать услугу</button>
-            <div class="backdrop is-hidden" data-modal>
+            <div class="backdrop is-hidden">
                 <div class="modal">
                     <p>
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
-                    <button data-modal-close>Закрыть</button>
+                    <button>Закрыть</button>
                 </div>
             </div>
         </div>
@@ -389,6 +389,15 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
