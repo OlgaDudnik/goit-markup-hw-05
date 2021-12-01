@@ -646,13 +646,11 @@ a.address-mail:visited {
 .footer-a:hover,
 .footer-a:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-a:hover,
 .footer-a:focus {
   color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------PORTFOLIO---------------- */
@@ -684,8 +682,8 @@ header .container {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters button:hover,
@@ -695,15 +693,13 @@ header .container {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------PORTFOLIO-IMG---------------- */
 
-.overlay:hover .text-hover {
-  opacity: 1;
+.overlay:hover .text-hover,
+.overlay-img:hover::before {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-img {
@@ -711,14 +707,8 @@ header .container {
   position: relative;
 }
 
-.overlay-img:hover::before {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .portfolio-img-li {
   position: relative;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-img::before {
@@ -734,6 +724,7 @@ header .container {
     rgba(33, 150, 243, 0.9)
   );
   opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-box p.text-hover {
